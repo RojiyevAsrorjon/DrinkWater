@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/containerView"
+    android:background="@drawable/bg_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cup2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="100 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup1"
+        app:layout_constraintLeft_toLeftOf="@id/cup1"
+        app:layout_constraintBottom_toBottomOf="@id/cup1"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup2"
+        app:layout_constraintTop_toTopOf="@id/cup1"
+        app:layout_constraintLeft_toRightOf="@id/cup1"
+        app:layout_constraintRight_toLeftOf="@id/cup3"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="150 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup2"
+        app:layout_constraintLeft_toLeftOf="@id/cup2"
+        app:layout_constraintBottom_toBottomOf="@id/cup2"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup3"
+        app:layout_constraintTop_toTopOf="@id/cup2"
+        app:layout_constraintLeft_toRightOf="@id/cup2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="175 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup3"
+        app:layout_constraintLeft_toLeftOf="@id/cup3"
+        app:layout_constraintBottom_toBottomOf="@id/cup3"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup4"
+        app:layout_constraintTop_toBottomOf="@id/cup1"
+        app:layout_constraintRight_toLeftOf="@id/cup5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="200 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup4"
+        app:layout_constraintLeft_toLeftOf="@id/cup4"
+        app:layout_constraintBottom_toBottomOf="@id/cup4"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup5"
+        app:layout_constraintTop_toTopOf="@id/cup4"
+        app:layout_constraintLeft_toRightOf="@id/cup4"
+        app:layout_constraintRight_toLeftOf="@id/cup6"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="300 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup5"
+        app:layout_constraintLeft_toLeftOf="@id/cup5"
+        app:layout_constraintBottom_toBottomOf="@id/cup5"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/ic_cup_water"
+        android:id="@+id/cup6"
+        app:layout_constraintTop_toTopOf="@id/cup5"
+        app:layout_constraintLeft_toRightOf="@id/cup5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="400 ml"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/cup6"
+        app:layout_constraintLeft_toLeftOf="@id/cup6"
+        app:layout_constraintBottom_toBottomOf="@id/cup6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:backgroundTint="#00CCCCCC"
+        app:layout_constraintTop_toTopOf="@id/okButton"
+        android:id="@+id/cancelButton"
+        app:layout_constraintRight_toLeftOf="@id/okButton"
+        app:layout_constraintBottom_toBottomOf="@id/okButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/game_buttons"
+        app:layout_constraintTop_toBottomOf="@id/cup5"
+        android:layout_marginTop="16dp"
+        android:id="@+id/okButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cancelButton"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

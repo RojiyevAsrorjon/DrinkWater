@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/genderMenuId"
+        android:title="@string/gender_text_menu"
+        android:icon="@drawable/ic_gender"/>
+    <item android:id="@+id/WeightMenuId"
+        android:title="@string/weight_text_menu"
+        android:icon="@drawable/ic_weight"/>
+    <item android:id="@+id/wakeMenuId"
+        android:title="@string/wake_up_text_menu"
+        android:icon="@drawable/ic_wake"/>
+    <item android:id="@+id/sleepMenuId"
+        android:title="@string/bedtime_text_menu"
+        android:icon="@drawable/ic_sleep"/>
+
+</menu>

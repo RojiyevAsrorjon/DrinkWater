@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/optionScreen"
+        tools:layout="@layout/screen_options"
+        android:name="uz.gita.drinkwater.presentation.fragments.OptionScreen"
+        android:label="OptionScreen" >
+        <action
+            android:id="@+id/action_optionScreen_to_createPlanScreen"
+            app:destination="@id/createPlanScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        tools:layout="@layout/screen_splash"
+        android:name="uz.gita.drinkwater.presentation.fragments.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_screenMain"
+            app:destination="@id/screenMain"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_letScreen"
+            app:destination="@id/letScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenMain"
+        tools:layout="@layout/screen_main"
+        android:name="uz.gita.drinkwater.presentation.fragments.MainScreen"
+        android:label="ScreenMain" >
+        <action
+            android:id="@+id/action_screenMain_to_settingScreen"
+            app:destination="@id/settingScreen" />
+        <action
+            android:id="@+id/action_screenMain_to_recommendScreen"
+            app:destination="@id/recommendScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/letScreen"
+        tools:layout="@layout/screen_let"
+        android:name="uz.gita.drinkwater.presentation.fragments.LetScreen"
+        android:label="LetScreen" >
+        <action
+            android:id="@+id/action_letScreen_to_optionScreen"
+            app:destination="@id/optionScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPlanScreen"
+        tools:layout="@layout/screen_plan_create"
+        android:name="uz.gita.drinkwater.presentation.fragments.CreatePlanScreen"
+        android:label="CreatePlanScreen" >
+        <action
+            android:id="@+id/action_createPlanScreen_to_screenMain"
+            app:destination="@id/screenMain"
+            app:popUpTo="@id/createPlanScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingScreen"
+        tools:layout="@layout/screen_setting"
+        android:name="uz.gita.drinkwater.presentation.fragments.SettingScreen"
+        android:label="SettingScreen" >
+        <action
+            android:id="@+id/action_settingScreen_to_optionScreen"
+            app:destination="@id/optionScreen"
+            app:popUpTo="@id/settingScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendScreen"
+        tools:layout="@layout/screen_drink"
+        android:name="uz.gita.drinkwater.presentation.fragments.RecommendScreen"
+        android:label="RecommendScreen" />
+</navigation>

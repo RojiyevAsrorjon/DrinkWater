@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DrinkWater</string>
+    <string name="entry_screen_text_hi">Hi,\nI`m your personal hydration companion</string>
+    <string name="entry_second_text">In order to provide tailored hydration advice, I need to get some basic information. And I`ll keep this a secret.</string>
+    <string name="entry_button_text">Let`s go</string>
+    <string name="your_gender">Your gender</string>
+    <string name="text_kg">kg</string>
+    <string name="your_weight_text">Your Weight</string>
+    <string name="wake_up_time_text">Wake-up time</string>
+    <string name="bedtime_text">Bedtime</string>
+    <string name="gender_text_menu">Gender</string>
+    <string name="weight_text_menu">Weight</string>
+    <string name="wake_up_text_menu">Wake-up</string>
+    <string name="bedtime_text_menu">Bedtime</string>
+    <string name="plan_your_drinking">Plan your drinking</string>
+    <string name="more_tips_text">More tips</string>
+    <string name="daily_drink_target_text">Daily Drink Target</string>
+    <string name="confirm_that_you_have_just_drunk_water_text">Confirm that you have just drunk water</string>
+    <string name="you_haven_t_drunk_yet_text">You haven`t drunk, yet!</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/bg_dialog"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Gender"
+        android:id="@+id/genderText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/genderText"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/group">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="18sp"
+            android:id="@+id/radio1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="18sp"
+            android:id="@+id/radio2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:backgroundTint="#00CCCCCC"
+        app:layout_constraintTop_toTopOf="@id/okButton"
+        android:id="@+id/cancelButton"
+        app:layout_constraintRight_toLeftOf="@id/okButton"
+        app:layout_constraintBottom_toBottomOf="@id/okButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/game_buttons"
+        app:layout_constraintTop_toBottomOf="@id/group"
+        android:layout_marginTop="16dp"
+        android:id="@+id/okButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cancelButton"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

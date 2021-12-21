@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:id="@+id/layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/game_buttons"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Home"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:drawablePadding="8dp"
+            app:drawableLeftCompat="@drawable/ic_drop_svg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_setting"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/settingButton"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/drop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/dropImage"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/chatImage"
+        android:elevation="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/recommendText"
+        android:text="Do not cold water or water with ice"
+        app:layout_constraintTop_toTopOf="@id/chatImage"
+        app:layout_constraintBottom_toBottomOf="@id/chatImage"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintRight_toRightOf="@id/chatImage" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@id/dropImage"
+        app:layout_constraintLeft_toRightOf="@id/dropImage"
+        app:layout_constraintRight_toLeftOf="@id/lampButton"
+        android:id="@+id/chatImage"
+        app:layout_constraintBottom_toBottomOf="@id/dropImage"
+        android:background="@drawable/chat"
+        app:layout_constraintDimensionRatio="3:1"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.18"
+        android:src="@drawable/lamp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="16dp"
+        android:id="@+id/lampButton"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/lampButton"
+        android:textSize="14sp"
+        android:textColor="@color/game_buttons"
+        app:layout_constraintRight_toRightOf="@id/lampButton"
+        app:layout_constraintLeft_toLeftOf="@id/lampButton"
+        android:text="@string/more_tips_text" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardElevation="8dp"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="260dp"
+        app:layout_constraintRight_toRightOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.3"
+                android:background="@drawable/bg_view"
+                android:id="@+id/semiBlueImageButton"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/small_cup"
+                app:layout_constraintTop_toTopOf="@id/semiBlueImageButton"
+                app:layout_constraintBottom_toBottomOf="@id/semiBlueImageButton"
+                app:layout_constraintLeft_toLeftOf="@id/semiBlueImageButton"
+                app:layout_constraintVertical_bias="0.8"
+                android:id="@+id/cupImage"
+                android:padding="4dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                app:layout_constraintRight_toRightOf="@id/semiBlueImageButton"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F4F1F1"
+                android:textSize="16sp"
+                android:text="200 ml"
+                app:layout_constraintBottom_toTopOf="@id/cupImage"
+                app:layout_constraintLeft_toLeftOf="@id/cupImage"
+                app:layout_constraintRight_toRightOf="@id/cupImage"
+                android:fontFamily="sans-serif"
+                android:id="@+id/currentCupVolume"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="+200 ml"
+                app:layout_constraintTop_toTopOf="@id/currentCupVolume"
+                app:layout_constraintBottom_toBottomOf="@id/currentCupVolume"
+                app:layout_constraintLeft_toLeftOf="@id/currentCupVolume"
+                app:layout_constraintRight_toRightOf="@id/currentCupVolume"
+                android:textColor="@color/game_buttons"
+                android:visibility="gone"
+                android:id="@+id/addAnimation"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/guideLineInner"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 1470ml"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@id/guideLineInner"
+                app:layout_constraintLeft_toRightOf="@id/amountDrunkWater"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/amountRequestedWater"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginEnd="4dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@id/guideLineInner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintRight_toLeftOf="@id/amountRequestedWater"
+                android:id="@+id/amountDrunkWater"
+                android:textColor="#57CFF7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/daily_drink_target_text"
+                app:layout_constraintTop_toTopOf="@id/guideLineInner"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <me.bastanfar.semicirclearcprogressbar.SemiCircleArcProgressBar
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintDimensionRatio="2:1"
+        android:id="@+id/progressBar"
+        app:progressBarColor="@color/game_buttons"
+        app:percent="0"
+        app:progressPlaceHolderColor="#D3D3D3"
+        app:progressPlaceHolderWidth="10"
+        app:progressBarWidth="20"
+        app:layout_constraintTop_toBottomOf="@id/chatImage"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        android:background="@drawable/change_button"
+        app:layout_constraintWidth_percent="0.14"
+        app:layout_constraintDimensionRatio="1:0.94"
+        android:src="@drawable/ic_water_icon"
+        android:id="@+id/recyclerImage"
+        app:layout_constraintRight_toRightOf="@id/progressBar"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@id/recyclerImage"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerImage"
+        app:layout_constraintRight_toRightOf="@id/cardView"
+        app:layout_constraintLeft_toRightOf="@id/cardView"
+        android:src="@drawable/ic_water_icon"
+        android:id="@+id/recyclerButton"
+        android:background="?android:selectableItemBackgroundBorderless"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.03"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="4dp"
+        android:id="@+id/cursorImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_that_you_have_just_drunk_water_text"
+        android:textColor="#878787"
+        app:layout_constraintTop_toBottomOf="@id/cursorImage"
+        app:layout_constraintLeft_toLeftOf="@id/cursorImage"
+        app:layout_constraintRight_toRightOf="@id/cursorImage"
+        android:layout_marginTop="4dp"
+        android:id="@+id/textClickDescription"
+        android:textSize="12sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textClickDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/clockLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clock"
+                    android:padding="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/imageClock"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="03:00 pm"
+                    app:layout_constraintLeft_toRightOf="@id/imageClock"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    app:layout_constraintBottom_toTopOf="@id/timeNextTime"
+                    android:id="@+id/timeTime"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#878787"
+                    android:text="Next time"
+                    app:layout_constraintLeft_toRightOf="@id/imageClock"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/timeNextTime"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/timeTime"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="200 ml"
+                    android:id="@+id/timeRecommendVolume"
+                    android:textColor="#636363"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginRight="24sp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                app:layout_constraintWidth_percent="0.9"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/recyclerView"
+                tools:listitem="@layout/item_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clockLayout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#878787"
+                android:text="@string/you_haven_t_drunk_yet_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/notYetText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="16sp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
